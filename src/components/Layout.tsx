@@ -25,6 +25,7 @@ import {
   Bell
 } from "lucide-react";
 import { useState } from "react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 interface LayoutProps {
   children: ReactNode;
@@ -70,7 +71,7 @@ const Layout = ({ children }: LayoutProps) => {
                 <Leaf className="h-6 w-6 text-white" />
               </div>
               <span className="text-xl font-playfair font-bold text-primary">
-                AyurDiet
+                Jeevanamrit
               </span>
             </Link>
           </div>
@@ -125,6 +126,7 @@ const Layout = ({ children }: LayoutProps) => {
             </Button>
 
             <div className="flex items-center space-x-4">
+              <ThemeToggle />
               <Button variant="ghost" size="sm" className="relative">
                 <Bell className="h-5 w-5" />
                 <span className="absolute -top-1 -right-1 h-2 w-2 bg-destructive rounded-full" />

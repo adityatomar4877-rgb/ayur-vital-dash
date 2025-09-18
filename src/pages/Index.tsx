@@ -69,7 +69,7 @@ const Index = () => {
                 <Leaf className="h-6 w-6 text-white" />
               </div>
               <span className="text-xl font-playfair font-bold text-primary">
-                AyurDiet
+                Jeevanamrit
               </span>
             </div>
             <div className="flex items-center space-x-4">
@@ -156,7 +156,7 @@ const Index = () => {
             <div className="space-y-8">
               <div>
                 <h2 className="text-4xl font-playfair font-bold text-primary mb-4">
-                  Why Choose AyurDiet?
+                  Why Choose Jeevanamrit?
                 </h2>
                 <p className="text-lg text-foreground-muted leading-relaxed">
                   Built by healthcare professionals, for healthcare professionals. Our platform combines the depth of Ayurvedic knowledge with the precision of modern technology.
@@ -223,7 +223,7 @@ const Index = () => {
               Ready to Transform Your Practice?
             </h2>
             <p className="text-xl text-white/90">
-              Join hundreds of Ayurvedic practitioners who are already using AyurDiet to provide better patient care and grow their practice.
+              Join hundreds of Ayurvedic practitioners who are already using Jeevanamrit to provide better patient care and grow their practice.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/login">
@@ -248,7 +248,7 @@ const Index = () => {
                 <div className="bg-white/10 p-2 rounded-lg">
                   <Leaf className="h-5 w-5 text-white" />
                 </div>
-                <span className="text-lg font-playfair font-bold">AyurDiet</span>
+                <span className="text-lg font-playfair font-bold">Jeevanamrit</span>
               </div>
               <p className="text-white/70 text-sm">
                 Modern Ayurvedic practice management software for healthcare professionals.
@@ -284,7 +284,7 @@ const Index = () => {
           </div>
           
           <div className="border-t border-white/20 mt-8 pt-8 text-center text-sm text-white/70">
-            <p>© 2024 AyurDiet. All rights reserved. This tool is for informational purposes only. Please consult an Ayurvedic doctor for diagnosis.</p>
+            <p>© 2024 Jeevanamrit. All rights reserved. This tool is for informational purposes only. Please consult an Ayurvedic doctor for diagnosis.</p>
           </div>
         </div>
       </footer>
