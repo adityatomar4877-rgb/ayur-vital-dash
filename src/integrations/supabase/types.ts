@@ -14,7 +14,237 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      daily_logs: {
+        Row: {
+          created_at: string | null
+          date: string
+          digestion_rating: number | null
+          energy_level: number | null
+          id: string
+          mood_rating: number | null
+          notes: string | null
+          user_id: string
+          weight_kg: number | null
+        }
+        Insert: {
+          created_at?: string | null
+          date?: string
+          digestion_rating?: number | null
+          energy_level?: number | null
+          id?: string
+          mood_rating?: number | null
+          notes?: string | null
+          user_id: string
+          weight_kg?: number | null
+        }
+        Update: {
+          created_at?: string | null
+          date?: string
+          digestion_rating?: number | null
+          energy_level?: number | null
+          id?: string
+          mood_rating?: number | null
+          notes?: string | null
+          user_id?: string
+          weight_kg?: number | null
+        }
+        Relationships: []
+      }
+      diet_entries: {
+        Row: {
+          calories: number | null
+          created_at: string | null
+          date: string
+          doctor_notes: string | null
+          food_name: string
+          id: string
+          meal_type: string
+          properties: Json | null
+          rasa: string[] | null
+          user_id: string
+        }
+        Insert: {
+          calories?: number | null
+          created_at?: string | null
+          date: string
+          doctor_notes?: string | null
+          food_name: string
+          id?: string
+          meal_type: string
+          properties?: Json | null
+          rasa?: string[] | null
+          user_id: string
+        }
+        Update: {
+          calories?: number | null
+          created_at?: string | null
+          date?: string
+          doctor_notes?: string | null
+          food_name?: string
+          id?: string
+          meal_type?: string
+          properties?: Json | null
+          rasa?: string[] | null
+          user_id?: string
+        }
+        Relationships: []
+      }
+      doctor_messages: {
+        Row: {
+          created_at: string | null
+          doctor_id: string | null
+          id: string
+          is_read: boolean | null
+          message: string
+          patient_id: string
+        }
+        Insert: {
+          created_at?: string | null
+          doctor_id?: string | null
+          id?: string
+          is_read?: boolean | null
+          message: string
+          patient_id: string
+        }
+        Update: {
+          created_at?: string | null
+          doctor_id?: string | null
+          id?: string
+          is_read?: boolean | null
+          message?: string
+          patient_id?: string
+        }
+        Relationships: []
+      }
+      lifestyle_habits: {
+        Row: {
+          category: string | null
+          completed_today: boolean | null
+          created_at: string | null
+          habit_name: string
+          id: string
+          last_completed: string | null
+          streak_count: number | null
+          user_id: string
+        }
+        Insert: {
+          category?: string | null
+          completed_today?: boolean | null
+          created_at?: string | null
+          habit_name: string
+          id?: string
+          last_completed?: string | null
+          streak_count?: number | null
+          user_id: string
+        }
+        Update: {
+          category?: string | null
+          completed_today?: boolean | null
+          created_at?: string | null
+          habit_name?: string
+          id?: string
+          last_completed?: string | null
+          streak_count?: number | null
+          user_id?: string
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          age: number | null
+          allergies: string[] | null
+          created_at: string | null
+          dominant_dosha: string | null
+          dosha_scores: Json | null
+          email: string | null
+          food_preferences: string[] | null
+          full_name: string | null
+          height_cm: number | null
+          id: string
+          medical_conditions: string[] | null
+          questionnaire_completed: boolean | null
+          updated_at: string | null
+          user_id: string
+          weight_kg: number | null
+        }
+        Insert: {
+          age?: number | null
+          allergies?: string[] | null
+          created_at?: string | null
+          dominant_dosha?: string | null
+          dosha_scores?: Json | null
+          email?: string | null
+          food_preferences?: string[] | null
+          full_name?: string | null
+          height_cm?: number | null
+          id?: string
+          medical_conditions?: string[] | null
+          questionnaire_completed?: boolean | null
+          updated_at?: string | null
+          user_id: string
+          weight_kg?: number | null
+        }
+        Update: {
+          age?: number | null
+          allergies?: string[] | null
+          created_at?: string | null
+          dominant_dosha?: string | null
+          dosha_scores?: Json | null
+          email?: string | null
+          food_preferences?: string[] | null
+          full_name?: string | null
+          height_cm?: number | null
+          id?: string
+          medical_conditions?: string[] | null
+          questionnaire_completed?: boolean | null
+          updated_at?: string | null
+          user_id?: string
+          weight_kg?: number | null
+        }
+        Relationships: []
+      }
+      remedies: {
+        Row: {
+          completed_today: boolean | null
+          condition: string | null
+          created_at: string | null
+          duration: string | null
+          id: string
+          ingredients: string[] | null
+          instructions: string
+          last_completed: string | null
+          timing: string | null
+          title: string
+          user_id: string
+        }
+        Insert: {
+          completed_today?: boolean | null
+          condition?: string | null
+          created_at?: string | null
+          duration?: string | null
+          id?: string
+          ingredients?: string[] | null
+          instructions: string
+          last_completed?: string | null
+          timing?: string | null
+          title: string
+          user_id: string
+        }
+        Update: {
+          completed_today?: boolean | null
+          condition?: string | null
+          created_at?: string | null
+          duration?: string | null
+          id?: string
+          ingredients?: string[] | null
+          instructions?: string
+          last_completed?: string | null
+          timing?: string | null
+          title?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
